@@ -1,7 +1,15 @@
 aid: eduadvisor
 name: EduAdvisor
-description: EduAdvisor is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  EduAdvisor is a Malaysian education platform that helps students compare, plan
+  and apply for tertiary education. It provides course and university comparison
+  tools, scholarship matching, study-abroad guidance, and free education
+  counseling, working directly with 100+ universities and colleges in Malaysia
+  and abroad to streamline applications for prospective students. The company was
+  surfaced as a portfolio company of 500 Global and added to the API Evangelist
+  network. EduAdvisor currently operates as a consumer-facing WordPress web
+  platform with no public developer program, API, or documentation surface at the
+  time of this enrichment pass.
 url: https://raw.githubusercontent.com/api-evangelist/eduadvisor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +17,30 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://cdn.eduadvisor.my/general/meta_images/2022-11-07/eduadvisor-hompage-meta-1667806091.webp
 tags:
 - Company
+- Education
+- EdTech
+- Higher Education
+- Student Services
+- Scholarships
+- Malaysia
+- University Admissions
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/eduadvisor-domain-security.yml
 - type: Website
   url: https://eduadvisor.my
+- type: Blog
+  url: https://eduadvisor.my/articles
+- type: Support
+  url: https://eduadvisor.my/help-centre
+- type: HelpCenter
+  url: https://eduadvisor.my/help-centre
+- type: PrivacyPolicy
+  url: https://eduadvisor.my/privacy-statement
+- type: Login
+  url: https://eduadvisor.my/login
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
